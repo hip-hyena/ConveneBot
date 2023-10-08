@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <link href="css/main.css" rel="stylesheet" media="screen">
+<body>
+  <div id="app">
+    <form id="head" class="head">
+      <input id="title" type="text" enterkeyhint="done" placeholder="Event Title"/>
+      <textarea id="description" enterkeyhint="done" placeholder="Event Description"></textarea>
+    </form>
+    <div id="info-status"></div>
+    <div class="tabs">
+      <div class="tabs__tab is-active" id="tab-calendar">Calendar</div>
+      <div class="tabs__tab" id="tab-participants">Participants</div>
+    </div>
+    <div id="calendar"></div>
+    <div id="participants" class="is-hidden"></div>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+</html>
